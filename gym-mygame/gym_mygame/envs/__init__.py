@@ -1,0 +1,1 @@
+from mygame import MyGame
