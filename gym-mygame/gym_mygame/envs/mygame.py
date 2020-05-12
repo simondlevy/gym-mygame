@@ -7,6 +7,7 @@ MIT License
 '''
 
 import gym
+
 import numpy as np
 
 class MyGame(gym.Env):
