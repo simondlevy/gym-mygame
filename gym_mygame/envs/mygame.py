@@ -16,17 +16,28 @@ class MyGame(gym.Env):
 
         gym.Env.__init__(self)
 
+        # Use [-1,+1] for observation space an action space
+        self.observation_space = gym.spaces.Box(-1, +1, shape=(1,), dtype=np.float32)
+        self.action_space = gym.spaces.Box(-1, +1, (1,), dtype=np.float32)
+
+        self.reset()
+
     def step(self, action):
 
-        return
+        state = [0]
+        reward = 0
+        done = False
+        info = {}
 
-    def render(self):
+        return state, reward, done, info
+
+    def render(self, mode='human'):
 
         return
 
     def reset(self):
 
-        return
+        return [0]
 
     def close(self):
 

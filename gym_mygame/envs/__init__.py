@@ -1,1 +1,1 @@
-from mygame import MyGame
+from gym_mygame.envs.mygame import MyGame
