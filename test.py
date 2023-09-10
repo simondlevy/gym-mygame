@@ -17,6 +17,8 @@ for i_episode in range(20):
 
     observation, _ = env.reset(seed=123)
 
+    print(observation)
+
     for t in range(100):
 
         env.render()
