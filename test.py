@@ -15,13 +15,11 @@ env = gym.make('gym_mygame:MyGame-v0')
 
 for i_episode in range(20):
 
-    observation = env.reset()
+    observation, _ = env.reset(seed=123)
 
     for t in range(100):
 
         env.render()
-
-        print(observation)
 
         action = env.action_space.sample()
 
