@@ -6,7 +6,7 @@ Copyright (C) 2020 A. Student
 MIT License
 '''
 
-import gym
+import gymnasium as gym
 
 import numpy as np
 
@@ -26,14 +26,15 @@ class MyGame(gym.Env):
 
         state = [0]
         reward = 0
-        done = False
+        terminated = False
+        truncated = False
         info = {}
 
-        return state, reward, done, info
+        return state, reward, terminated, truncated, info
 
     def render(self, mode='human'):
 
-        return
+        pass
 
     def reset(self):
 

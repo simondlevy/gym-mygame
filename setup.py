@@ -12,7 +12,7 @@ from setuptools import setup
 
 setup (name = 'gym_mygame',
     version = '0.1',
-    install_requires = ['gym', 'numpy'],
+    install_requires = ['gymnasium', 'numpy'],
     description = 'Gym environment for my CSCI 316 game',
     packages = ['gym_mygame', 'gym_mygame.envs'],
     author='Simon D. Levy',
